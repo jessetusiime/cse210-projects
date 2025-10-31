@@ -1,5 +1,6 @@
 using System;
-using System.Numerics;
+using System.Collections.Generic;
+
 
 class Program
 {
@@ -41,7 +42,7 @@ class Program
             {
                 max = number;
             }
-            Console.WriteLine($"The maximum number is {max}");
         }
+        Console.WriteLine($"The maximum number is {max}");
     }
 }
