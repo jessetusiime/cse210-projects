@@ -44,5 +44,24 @@ class Program
             }
         }
         Console.WriteLine($"The maximum number is {max}");
+
+        // Smallest Positive number
+        int smallPositiv = int.MaxValue;
+        foreach (int num in numbers)
+        {
+            if (num > 0 && num < smallPositiv)
+            {
+                smallPositiv = num;
+            }
+        }
+
+        if (smallPositiv == int.MaxValue)
+        {
+            Console.WriteLine("No positive numbers were entered!");
+        }
+        else
+        {
+            Console.Writegit ($"The smallest Positive number is: {smallPositiv}");
+        }
     }
 }
