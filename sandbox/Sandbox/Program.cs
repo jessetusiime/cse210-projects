@@ -4,27 +4,21 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Console.WriteLine("Hello World! This is the Sandbox Project.");
-        // Console.WriteLine("This is Jesse's first C# program!");
-        // Console.WriteLine("What is your favorite color? ");
-        // string color = Console.ReadLine();
-        // Console.Write($"Your favorite color is {color}");
+        Fraction f1 = new Fraction();         // 1/1
+        Console.WriteLine(f1.GetFractionString());
+        Console.WriteLine(f1.GetDecimalValue());
 
-        int x = 5;
-        int y = 2;
+        Fraction f2 = new Fraction(5);        // 5/1
+        Console.WriteLine(f2.GetFractionString());
+        Console.WriteLine(f2.GetDecimalValue());
 
-        if (x > y)
-        {
-            Console.WriteLine("Greater");
-        }
-        else if (x < y)
-        {
-            Console.WriteLine("Less");
-        }
-        else
-        {
-            Console.WriteLine("Equal");
-        }
-        
+        Fraction f3 = new Fraction(3, 4);      // 3/4
+        Console.WriteLine(f3.GetFractionString());
+        Console.WriteLine(f3.GetDecimalValue());
+
+        Fraction f4 = new Fraction(1, 3);      // 1/3
+        Console.WriteLine(f4.GetFractionString());
+        Console.WriteLine(f4.GetDecimalValue());
+
     }
 }
