@@ -35,7 +35,7 @@ class Program
 
             foreach (Comment c in v.Comments)
             {
-                Console.WriteLine($" {c.CommenterName}: {c.Text}");
+                Console.WriteLine($" {c._commenterName}: {c._text}");
             }
 
             Console.WriteLine();
